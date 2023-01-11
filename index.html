@@ -4,35 +4,61 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Online Shopping</title>
+<!--  구글 폰트 적용  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <script src="src/main.js" defer></script>
 </head>
 <body>
-<main class="shop">
-    <div class="shop__logo">
-        <img src="img/logo.png" alt=""/>
-    </div>
-    <ul class="shop__btn">
-        <li>
-            <button class="t-shirt"></button>
-        </li>
-        <li>
-            <button class="pants"></button>
-        </li>
-        <li>
-            <button class="skirt"></button>
-        </li>
-        <li>
-            <button class="blue">Blue</button>
-        </li>
-        <li>
-            <button class="yellow">Yellow</button>
-        </li>
-        <li>
-            <button class="pink">Pink</button>
-        </li>
-    </ul>
-    <ul class="shop__list"></ul>
-</main>
+<!--Logo-->
+<h1>Mini shopping mall</h1>
+<img src="img/logo.png" alt="logo" class="logo" />
+<!--Buttons-->
+<section class="buttons">
+    <button class="btn">
+        <img
+                src="img/blue_t.png"
+                alt="tshirt"
+                class="imgBtn"
+                data-key="type"
+                data-value="tshirt"
+        />
+    </button>
+    <button class="btn">
+        <img
+                src="img/blue_p.png"
+                alt="pants"
+                class="imgBtn"
+                data-key="type"
+                data-value="pants"
+        />
+    </button>
+    <button class="btn">
+        <img
+                src="img/yellow_s.png"
+                alt="skirt"
+                class="imgBtn"
+                data-key="type"
+                data-value="skirt"
+        />
+    </button>
+    <button class="btn colorBtn blue" data-key="color" data-value="blue">
+        Blue
+    </button>
+    <button class="btn colorBtn yellow" data-key="color" data-value="yellow">
+        Yellow
+    </button>
+    <button class="btn colorBtn pink" data-key="color" data-value="pink">
+        Pink
+    </button>
+</section>
+
+<!--Items-->
+<ul class="items">
+    <li class="item">
+        <img src="img/blue_t.png" alt="tshirt" class="item__thimbnail">
+        <span class="item__description">male,large</span>
+    </li>
+</ul>
 </body>
 </html>
