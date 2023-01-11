@@ -28,6 +28,13 @@ body {
     font-family: 'Klee One', cursive;
 }
 
+header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:row-reverse;
+    margin: 0 auto;
+}
+
 h1 {
     color: var(--color--white);
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
@@ -36,6 +43,9 @@ h1 {
 .logo {
     cursor: pointer;
     transition: transform var(--annimation-duration) ease;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
 }
 
 .btn {
@@ -100,7 +110,8 @@ span {
     align-items: center;
     padding: var(--base-space);
     margin-bottom: var(--base-space);
-    box-shadow: 12px 8px 12px 1px rgba(0, 0, 255, .20);
+    display: flex;
+    justify-content: center;
 }
 
 .item__thumbnail {
@@ -115,4 +126,10 @@ span {
 
 .invisible {
     display: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
