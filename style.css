@@ -1,6 +1,6 @@
 :root {
   /* color */
-  --color--black: #181212;
+  --color--black: #3f3744;
   --color--white: #ffffff;
   --color--blue: #3b5dc3;
   --color--yellow: #fdb500;
@@ -98,7 +98,7 @@ span{
   align-items: center;
   padding: var(--base-space);
   margin-bottom: var(--base-space);
-  box-shadow: 12px 12px 12px 1px rgba(0, 0, 255, .20);
+  box-shadow: 12px 8px 12px 1px rgba(0, 0, 255, .20);
 }
 
 .item__thumbnail {
